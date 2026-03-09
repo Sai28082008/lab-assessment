@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger" href="#">Townscript</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-danger" href="/present.html">Present Events</a></li>
+                            <li><a class="dropdown-item text-danger" href="/future.html">Future Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/premium.html">Premium</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav><br>
+    <div class="alert alert-warning alert-dismissible fade show " role="alert">
+        🚨 Only less seats left! Tickets are selling fast. Book now!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div><br>
+    <div class="m-3">
+        <button class="btn btn-danger text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#eventMenu">
+            Navigation
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="eventMenu">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-danger">TownScript Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body text-danger">
+
+                <p>Quick navigation</p>
+
+                <div class="list-group">
+                    <a href="/index.html" class="list-group-item list-group-item-dark bg-dark text-danger">Home</a>
+                    <a href="/present.html" class="list-group-item list-group-item-dark bg-dark text-danger">present
+                        Events</a>
+                    <a href="/future.html" class="list-group-item list-group-item-dark bg-dark text-danger">Future
+                        Events</a>
+                    <a href="/signup.html" class="list-group-item list-group-item-dark bg-dark text-danger">Sign Up</a>
+                    <a href="/premium.html" class="list-group-item list-group-item-dark bg-dark text-danger">Premium</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

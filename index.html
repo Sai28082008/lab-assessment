@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger" href="#">Townscript</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-danger" href="/present.html">Present Events</a></li>
+                            <li><a class="dropdown-item text-danger" href="/future.html">Future Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/premium.html">Premium</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav><br>
+    <div class="alert alert-warning alert-dismissible fade show " role="alert">
+        🚨 Only less seats left! Tickets are selling fast. Book now!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div><br>
+    <div class="m-3">
+        <button class="btn btn-danger text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#eventMenu">
+            Navigation
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="eventMenu">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-danger">TownScript Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body text-danger">
+
+                <p>Quick navigation</p>
+
+                <div class="list-group">
+                    <a href="/index.html" class="list-group-item list-group-item-dark bg-dark text-danger">Home</a>
+                    <a href="/present.html" class="list-group-item list-group-item-dark bg-dark text-danger">present
+                        Events</a>
+                    <a href="/future.html" class="list-group-item list-group-item-dark bg-dark text-danger">Future
+                        Events</a>
+                    <a href="/signup.html" class="list-group-item list-group-item-dark bg-dark text-danger">Sign Up</a>
+                    <a href="/premium.html" class="list-group-item list-group-item-dark bg-dark text-danger">Premium</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <main>
+        <section class="container-lg">
+            <div class="container text-center mt-5">
+                <h1>Turning your special moments into unforgettable events</h1>
+                <p class="lead">Welcome to TownScript - Your trusted event management partner.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-intervel="2000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://ts-production.imgix.net/images/26ce9d96-f84c-4b52-823c-d6c2d13c0a13.jpg?auto=compress,format&w=1920&h=1080&q=10"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block ">
+                                    <h5>The Social Jam</h5>
+                                    <p>
+                                        Thu 26th, 07:00 PM (IST) onwards | Multiple Dates
+                                        Sector 27, Gurugram.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://ts-production.imgix.net/images/91313b6c-d546-4066-a8d8-93ff76649fe1.jpg?auto=compress,format&w=1920&h=1080&q=10"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Run For Good 2026</h5>
+                                    <p>
+                                        Mar 15 | 06:00 AM
+                                        (IST)
+                                        Pragati Vihar, New Delhi.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://ts-production.imgix.net/images/0e6119b8-4309-4dbf-a205-5eb9bacf2012.jpg?auto=compress,format&w=1920&h=1080&q=10"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>PNB Soldierathon Delhi 2026 - Run With Soldiers - Run For Soldiers</h5>
+                                    <p>
+                                        Apr 05 | 04:00 AM
+                                        (IST)
+                                        Pragati Vihar, New Delhi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <h3 class="text-center"><b>Browse by Category</b></h3>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/digest-leisure.png"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/digest-tech.png"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/digest-travel.png"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/digest-fitness.png"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/digest-business.png"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/digest-workshop.png"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <h3 class="text-center"><b>Quickly Filter Events by</b></h3>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4 class=""><b>This Weekend</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4><b>Free</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4><b>This Week</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4><b>This Month</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4><b>Tomorrow</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4><b>Today</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4>Popular Events <br>in Delhi</h4><br><br><br><br><br><br>
+                            <b>
+                                <h3>View All➡️</h3>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/9b3c9812-8e70-4332-ab2a-32d5a6cede69.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Run for Good 2026</b></p>
+                            <p>Mar 15| Pragathi vihar,New Delhi</p>
+                            <h6 class="text-danger">₹750 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/3ac0498d-d1ff-45d7-9b12-3525c44bd864.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Medata Run</b></p>
+                            <p>Mar 29| Sector 50,Noida</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/ST1757418062645STENDac648f81-181d-414e-8c90-25fb929263ef.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Run for Peace</b></p>
+                            <p>Sep 14 to Mar 31| New Delhi</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/9b8e6a4b-e60e-4044-b6fe-5f85d84396e6.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Runathon 2026</b></p>
+                            <p>Mar 15| Near Gurugram</p>
+                            <h6 class="text-danger">₹640 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/f0dc9a54-c9d6-4964-99de-8c48dc4aeaae.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Tuffman half marathon</b></p>
+                            <p>Mar 15|Gurugram</p>
+                            <h6 class="text-danger">₹1360 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <div class="row text-light bg-dark rounded-2">
+                <div class="col-md-6">
+                    <h2>TownHall</h2><br>
+                    <p>Interested in hosting a virtual conference?</p><br>
+                    <p>Introducing Townhall(A TownScript Company) an all-in-one platformfor virtual events of<br>any
+                        size and type.</p><br>
+                    <button type="button" class="btn btn-outline-danger">dark</button>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/organiser-b2b.png"
+                        class="img-fluid rounded-4" alt="...">
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4>Yoga Events <br>in Delhi</h4><br><br><br><br><br><br>
+                            <b>
+                                <h3>View All➡️</h3>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/35d6b34a-44e9-484a-814d-3e9cb840b5a6.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Ayuryog expo</b></p>
+                            <p>Apr 24-26| Greater Noida</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/category-images/mobile/medical.jpg?auto=compress,format&w=375&h=250"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>9th world cancer congress</b></p>
+                            <p>Mar 20-21|Jawaharlal University, New Delhi</p>
+                            <h6 class="text-danger">₹5999 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/f6da3109-0d24-4f0d-acf1-3cf4563d1de7.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Godrej Miraya</b></p>
+                            <p>oct 17 to dec 31| Gurugram</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/category-images/mobile/sports.jpg?auto=compress,format&w=375&h=250"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Nasha Mukti kendra in New Delhi</b></p>
+                            <p>Aug 16 to sep 08| New Delhi</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/4c80e426-aeb8-4b25-8ea3-9347a81aec75.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>AtheleteCo common Ground</b></p>
+                            <p>Mar 21|New Delhi</p>
+                            <h6 class="text-danger">₹1799 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <h4>Buisness Events <br>in Delhi</h4><br><br><br><br><br><br>
+                            <b>
+                                <h3>View All➡️</h3>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/fb74a366-7b66-4efb-a496-b2cf59ff0867.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Qard Digital Buisness Card</b></p>
+                            <p>Sep 03| Sector 76, Noida</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/07b6eb6d-6317-4e8e-b05f-f20a43cf6e63.jpg?auto=compress,format&w=375&h=250"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Maize and Millet Summit 2026</b></p>
+                            <p>Mar 13-14| Sector 24, Gurugram</p>
+                            <h6 class="text-danger">₹17700 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/f1cbeb3c-0393-4a34-afee-6feb3986c5fb.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Agri and Biowaste conclave 2026</b></p>
+                            <p>Mar 13 to mar 14| Gurugram</p>
+                            <h6 class="text-danger">₹11800 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/d5ba81f1-b943-418e-b9a9-a7cb3453cb8f.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>India International Hospitality 2026</b></p>
+                            <p>Aug 5 to Aug 8| Greater Noida</p>
+                            <h6 class="text-danger">Free</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="https://ts-production.imgix.net/images/mobile-cover-uploaded/c8f82072-550d-417a-90e3-587ebc56f133.jpg?auto=compress,format&w=375&h=200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-light bg-dark rounded-2">
+                            <p class="card-text"><b>Global Startups Club,Startup Networking</b></p>
+                            <p>Mar 14| Gurugram</p>
+                            <h6 class="text-danger">₹475 onwards</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <h3 class="text-center"><b>Some events running in april month</b></h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Event ID</th>
+                                <th>Event Name</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>101</td>
+                                <td>Music Concert</td>
+                                <td>15 April 2026</td>
+                                <td>Delhi</td>
+                                <td>Open</td>
+                            </tr>
+
+                            <tr>
+                                <td>102</td>
+                                <td>Tech Workshop</td>
+                                <td>20 April 2026</td>
+                                <td>Hyderabad</td>
+                                <td>Open</td>
+                            </tr>
+
+                            <tr>
+                                <td>103</td>
+                                <td>Food Festival</td>
+                                <td>25 April 2026</td>
+                                <td>Mumbai</td>
+                                <td>Booking</td>
+                            </tr>
+
+                            <tr>
+                                <td>104</td>
+                                <td>Startup Meetup</td>
+                                <td>30 April 2026</td>
+                                <td>Bangalore</td>
+                                <td>Upcoming</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-lg">
+            <div class="row text-light bg-dark rounded-2">
+                <div class="col-md-6">
+                    <h2>TownHall</h2><br>
+                    <p>Interested in hosting a virtual conference?</p><br>
+                    <p>Introducing Townhall(A TownScript Company) an all-in-one platformfor virtual events of<br>any
+                        size and type.</p><br>
+                    <button type="button" class="btn btn-outline-dark">dark</button>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ListingsStatic/organiser-b2b.png"
+                        class="img-fluid rounded-4" alt="...">
+                </div>
+            </div>
+        </section><br>
+
+    </main>
+    <footer class="bg-dark text-light pt-4 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-danger">TownScript</h5>
+                    <p>
+                        TownScript is your platform to discover, create and manage amazing events.
+                        From concerts to workshops, we make every event memorable.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Events</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger">Contact Us</h5>
+                    <p>📍 India</p>
+                    <p>📧 support@townscript.com</p>
+                    <p>📞 +91 9876543210</p>
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="text-center">
+                <p class="mb-0">© 2026 TownScript | All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
